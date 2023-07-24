@@ -24,14 +24,14 @@ fi
 
 # Générer un nom de répertoire avec horodatage
 timestamp=$(date +"%Y%m%d_%H%M%S")
-directory="smbrecon_enum_$timestamp"
+directory="smbrecon_enum4linux_$timestamp"
 
 # Créer le répertoire de stockage des fichiers de sortie
 mkdir "$directory"
 
 # Générer un nom de fichier avec horodatage pour les adresses IP avec le port 445 ouvert
 timestamp_file=$(date +"%Y%m%d_%H%M%S")
-filename="hosts_nc_$timestamp_file.txt"
+filename="smbrecon_targetlist_$timestamp_file.txt"
 
 # Lancement du scan avec nmap pour les ports 445
 echo "Lancement du scan des ports 445 sur la plage d'adresses IP $ip_range..."
